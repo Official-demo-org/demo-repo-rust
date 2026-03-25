@@ -1,15 +1,37 @@
 [package]
-name = "rust_vuln_demo"
+name = "awesome-rust"
 version = "0.1.0"
-edition = "2021"
+authors = []
+homepage = "https://github.com/rust-unofficial/awesome-rust"
+repository = "https://github.com/rust-unofficial/awesome-rust"
+edition = "2018"
+default-run = "awesome-rust"
 
 [dependencies]
-openssl = "0.9"
-reqwest = "0.9"
-tokio = "0.2"
-rand = "0.3"
-time = "0.1"
-hyper = "0.10"
-actix-web = "3.0"
-diesel = "1.0"
-rocket = "0.4"
+pulldown-cmark = "0.8"
+futures = "0.3"
+reqwest = { version="0.12", default-features=false, features=["rustls-tls", "json"] }
+tokio = {version = "1", features = ["macros", "rt", "rt-multi-thread", "time"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_yaml = "0.8"
+hyper = "0.14"
+anyhow = "1"
+thiserror = "2"
+lazy_static = "1"
+env_logger = "0.8"
+log = "0.4"
+regex = "1"
+scraper = "0.12"
+chrono = { version = "0.4", features = ["serde"] }
+chrono-humanize = "0.2"
+diffy = "0.3"
+serde_json = "*"
+cookie = "0.7.5"
+openssl = "0.8.3"
+libp2p-gossipsub = "0.49.2"
+lz4_flex = "0.11.5"
+yamux = "0.13.8"
+adtensor = "0.0.1"
+apollo-router = "1.14.0"
+async-graphql = "5.0.1"
+deno = "0.6.0"
