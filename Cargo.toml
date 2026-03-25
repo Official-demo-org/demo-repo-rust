@@ -1,12 +1,5 @@
-[package]
-name = "demo_vuln_app"
-version = "0.1.0"
-edition = "2021"
-
-[dependencies]
-actix-web = "3.0"        # outdated
-serde = "1.0.0"          # old
-rand = "0.3"             # weak RNG
-openssl = "0.9"          # vulnerable
-reqwest = "0.9"          # outdated HTTP client
-tokio = "0.2"            # old async runtime
+lazy_static = "0.1"
+url = "1.0"
+clap = "2.0"
+log = "0.3"
+env_logger = "0.3"
