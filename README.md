@@ -10,6 +10,7 @@ build, test, and sign artifacts using Sigstore and GitHub Attestations.
 
 ## Features
 
+
 - Pre-configured `Cargo.toml`
 - Sample Rust code in `src/main.rs`
 - Dockerfile for building a container image
